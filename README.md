@@ -52,6 +52,12 @@ $ ./convert2flow from-txt source-file.txt
 
 # flow_import.json file will be generated in current directory
 ```
+#### Source
+(the text blocks must be separated by 2 blank new line)
+![text example](imgs/img1.png)
+#### Result after import in Rapidpro
+(every text block will generate one send message node)
+![flow example](imgs/img2.png)
 
 ## Commands
 
@@ -61,7 +67,7 @@ from-txt: generate a import_flow.json from a txt file
 
 ## License ##
 
-This project is under license from Apache. For more details, see the [LICENSE](LICENSE) file.
+This project is under license from Apache v2. For more details, see the [LICENSE](LICENSE) file.
 
 
 Made with :heart: by <a href="https://github.com/rasoro" target="_blank">Rafael Soares</a>

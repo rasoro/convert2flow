@@ -1,0 +1,100 @@
+{
+  "version": "13",
+  "site": "https://new.push.al",
+  "flows": [
+    {
+      "name": "convert2flow-0eda1490-f2bc-46cf-9c7c-6c1e07f4f538",
+      "uuid": "0eda1490-f2bc-46cf-9c7c-6c1e07f4f538",
+      "spec_version": "13.1.0",
+      "language": "eng",
+      "type": "messaging",
+      "nodes": [
+        {
+          "uuid": "ac2454d1-72c7-4f58-9c83-08e743139bf8",
+          "actions": [
+            {
+              "uuid": "c38b27d8-696b-4b06-8069-588f34949cfe",
+              "attachments": [],
+              "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit.\nMaxime mollitia, molestiae quas",
+              "type": "send_msg",
+              "quick_replies": []
+            }
+          ],
+          "exits": [
+            {
+              "uuid": "5e4723ab-0cf5-454c-9031-63af099e0380",
+              "destination_uuid": "b49d611e-4038-433d-b643-710d8898bae9"
+            }
+          ]
+        },
+        {
+          "uuid": "b49d611e-4038-433d-b643-710d8898bae9",
+          "actions": [
+            {
+              "uuid": "9eda1554-47f6-492d-acb3-3a98c35159ea",
+              "attachments": [],
+              "text": "Impedit sit sunt quaerat, odit.",
+              "type": "send_msg",
+              "quick_replies": []
+            }
+          ],
+          "exits": [
+            {
+              "uuid": "904adc1a-42cf-447f-9b23-a48e3dc8c1b0",
+              "destination_uuid": "f9361c31-d0bf-4aa2-ba30-f121adcf8b4d"
+            }
+          ]
+        },
+        {
+          "uuid": "f9361c31-d0bf-4aa2-ba30-f121adcf8b4d",
+          "actions": [
+            {
+              "uuid": "38dab40d-0409-43eb-9cb8-a325db6eafa8",
+              "attachments": [],
+              "text": "Quo neque error repudiandae fuga? Ipsa laudantium molestias eos \nsapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam",
+              "type": "send_msg",
+              "quick_replies": []
+            }
+          ],
+          "exits": [
+            {
+              "uuid": "72ca5d01-712d-43f2-b36f-ce091332c239",
+              "destination_uuid": null
+            }
+          ]
+        }
+      ],
+      "_ui": {
+        "nodes": {
+          "ac2454d1-72c7-4f58-9c83-08e743139bf8": {
+            "position": {
+              "left": 0,
+              "top": 0
+            },
+            "type": "execute_actions"
+          },
+          "b49d611e-4038-433d-b643-710d8898bae9": {
+            "position": {
+              "left": 0,
+              "top": 140
+            },
+            "type": "execute_actions"
+          },
+          "f9361c31-d0bf-4aa2-ba30-f121adcf8b4d": {
+            "position": {
+              "left": 0,
+              "top": 280
+            },
+            "type": "execute_actions"
+          }
+        }
+      },
+      "revision": 1,
+      "expire_after_minutes": 5
+    }
+  ],
+  "campaigns": [],
+  "triggers": [],
+  "fields": [],
+  "groups": []
+}

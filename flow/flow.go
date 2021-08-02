@@ -79,7 +79,7 @@ func NewFlow() Flow {
 	}
 
 	return Flow{
-		Name:        "",
+		Name:        "convert2flow-" + flowUUID.String(),
 		UUID:        flowUUID.String(),
 		SpecVersion: "13.1.0",
 		Language:    "eng",
