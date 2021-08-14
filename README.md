@@ -69,9 +69,6 @@ from-txt: generate a import_flow.json from a txt file
 
 This project is under license from Apache v2. For more details, see the [LICENSE](LICENSE) file.
 
-
-Made with :heart: by <a href="https://github.com/rasoro" target="_blank">Rafael Soares</a>
-
 &#xa0;
 
 <a href="#top">Back to top</a>
