@@ -36,6 +36,16 @@ type TxtFile struct {
 	Messages     []string
 }
 
+type CsvFile struct {
+	ScannedLines ScannedLines
+	Scanner      *bufio.Scanner
+	Messages     []string
+}
+
+func NewCsvFile() CsvFile {
+	return CsvFile{}
+}
+
 func NewTxtFile() TxtFile {
 	return TxtFile{}
 }
@@ -50,6 +60,18 @@ func (d *DocxFile) ReadFile(filePath string) {
 	d.Scanner = bufio.NewScanner(strings.NewReader(f))
 	d.ScannedLines = GetLines(d.Scanner)
 	d.Messages = ParseLinesToMsgs(d.ScannedLines)
+}
+
+func (c *CsvFile) ReadFile(filePath string) {
+	f, err := os.Open(filePath)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+
+	c.Scanner = bufio.NewScanner(f)
+	c.ScannedLines = GetLines(c.Scanner)
+	c.Messages = ParseLinesToMsgs(c.ScannedLines)
 }
 
 func (t *TxtFile) ReadFile(filePath string) {
