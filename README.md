@@ -18,7 +18,7 @@ This is a CLI application write in Go to convert text files in a json file that 
 
  - Convert from docx;
  - Convert from txt;
- - Convert from csv
+ - Convert from csv;
 
 ## Utilization ##
 
@@ -61,11 +61,11 @@ $ ./convert2flow from-txt source-file.txt
 
 ## Commands
 
-from-docx: generate a import_flow.json from a docx file
+`from-docx`: generate a import_flow.json from a docx file.
 
-from-txt: generate a import_flow.json from a txt file
+`from-txt`: generate a import_flow.json from a txt file.
 
-from-csv: generate a import_flow.json from a txt file
+`from-csv`: generate a import_flow.json from a csv file.
 
 ## License ##
 
